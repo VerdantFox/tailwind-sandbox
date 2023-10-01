@@ -9,28 +9,88 @@
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative w-1/2 h-12 bg-red-200">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute chile</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+    </div>
 
     <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-green-100">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-green-300"></div>
+    </div>
 
     <!-- Bottom left corner -->
-
+    <div class="relative h-32 w-32 bg-blue-100">
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-blue-300"></div>
+    </div>
     <!-- Bottom right corner -->
-
+    <div class="relative h-32 w-32 bg-cyan-100">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-cyan-300"></div>
+    </div>
     <!-- Span top edge -->
-
+    <div class="relative h-32 w-32 bg-gray-100">
+      <div class="absolute inset-x-0 top-0 h-16 bg-gray-300"></div>
+    </div>
     <!-- Span left edge -->
-
+    <div class="relative h-32 w-32 bg-orange-100">
+      <div class="absolute inset-y-0 left-0 w-16 bg-orange-300"></div>
+    </div>
     <!-- Span right edge -->
-
+    <div class="relative h-32 w-32 bg-pink-100">
+      <div class="absolute inset-y-0 right-0 w-16 bg-pink-300"></div>
+    </div>
     <!-- Span bottom edge -->
-
+    <div class="relative h-32 w-32 bg-red-100">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-red-300"></div>
+    </div>
     <!-- Display Classes -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <span class="bg-red-200 inline font-bold">This is inline</span> Odio
+      maxime dolores, cupiditate voluptatibus obcaecati id error illo nihil et
+      <span class="bg-yellow-200 inline-block font-bold">
+        This is inline block</span
+      >
+      accusantium, harum voluptatum reiciendis? Cupiditate
+      <span class="bg-blue-200 block font-bold">This is block</span> hic rerum
+      animi rem provident, ipsam
+      <span class="bg-pink-200 hidden font-bold"> This is hidden</span>sapiente
+      laudantium pariatur!
+    </div>
 
     <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute w-24 left-10 h-24 bg-blue-300 z-40">1</div>
+      <div class="absolute w-24 left-20 h-24 bg-blue-400">2</div>
+      <div class="absolute w-24 left-40 h-24 bg-blue-500 z-10">3</div>
+      <div class="absolute w-24 left-60 h-24 bg-blue-600 z-20">4</div>
+      <div class="absolute w-24 left-80 h-24 bg-blue-700 z-30">5</div>
+    </div>
 
     <!-- Floats -->
+    <div class="w-1/2">
+      <img
+        class="h-48 w-48 float-left m-4"
+        src="../assets/img/img1.jpg"
+        alt=""
+      />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni tempore,
+        voluptate possimus, obcaecati omnis quae sunt quidem laboriosam fugit
+        illo nesciunt eveniet quisquam corporis necessitatibus. Modi atque
+        suscipit delectus odit? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Unde temporibus consequuntur officia harum alias, nisi
+        velit eos tenetur perspiciatis ea blanditiis at possimus impedit
+        obcaecati quibusdam rerum corrupti vero? Quas?
+      </p>
+    </div>
   </body>
 </html>
 
