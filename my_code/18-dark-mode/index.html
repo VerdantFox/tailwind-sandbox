@@ -5,10 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
     <title>Dark Mode</title>
   </head>
   <body>
-    <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
+    <div
+      class="container mx-auto mt-10 bg-white dark:bg-slate-900 rounded-xl px-6 py-8 shadow xl"
+    >
+      <h3 class="text-slate-900 dark:text-white font-medium tracking-tight">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, repellat!
+      </h3>
+      <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea error nisi
+        atque voluptatibus, culpa ratione numquam nobis praesentium, cumque,
+        ipsa dolorum obcaecati quas officiis non?
+      </p>
+    </div>
+
+    <div class="max-w-lg mx-auto mt-6">
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/@themesberg/flowbite@1.1.0/dist/flowbite.min.css"
+      />
+
+      <label
+        for="toggle-example"
+        class="flex items-center cursor-pointer relative mb-4"
+      >
+        <input type="checkbox" id="toggle-example" class="sr-only" />
+        <div
+          class="toggle-bg bg-gray-200 border-2 border-gray-200 h-6 w-11 rounded-full"
+        ></div>
+        <span class="ml-3 text-gray-900 text-sm font-medium"
+          >Toggle dark mode</span
+        >
+      </label>
+    </div>
+    <script>
+      document
+        .getElementById("toggle-example")
+        .addEventListener("change", function () {
+          if (this.checked) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        });
+    </script>
   </body>
 </html>
 

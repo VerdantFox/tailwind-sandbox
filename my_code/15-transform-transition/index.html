@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            transitionDuration: {
+              2000: "2000ms",
+            },
+          },
+        },
+      };
+    </script>
     <title>Transform & Transition</title>
   </head>
   <body>
@@ -16,9 +27,23 @@
     </button>
 
     <!-- Transition -->
-
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 transition duration-300"
+    >
+      Click me
+    </button>
     <!-- Transition & Transform -->
+    <button
+      class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:rotate-3 transition"
+    >
+      Click me
+    </button>
 
+    <img
+      class="display:block m-auto w-48 hover:rotate-180 hover:scale-150 hover:skew-x-12 hover:box-shadow hover:-translate-x-1/2 hover:translate-y-1/2 transition duration-2000"
+      src="../assets/img/img1.jpg"
+      alt=""
+    />
     <!-- Transform & Transition -->
   </body>
 </html>
